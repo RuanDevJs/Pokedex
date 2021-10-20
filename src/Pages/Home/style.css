@@ -6,3 +6,13 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 727px) {
+    .home-container {
+        max-width: 727px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+}

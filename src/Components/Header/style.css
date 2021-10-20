@@ -37,3 +37,15 @@ h1.header-title::after{
 .toRightEffect{
     opacity: 0.2px;
 }
+
+@media only screen and (max-width: 727px) {
+    .header-container input {
+        display: block;
+        width: 220px;
+        padding: 16px;
+        border: 0;
+        outline: 0;
+        background-color: #F9F9F9;
+        text-align: center;
+    }
+}
