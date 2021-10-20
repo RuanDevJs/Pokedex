@@ -1,0 +1,53 @@
+@import "../../assets/css/animate.css";
+
+.pokemon-item {
+    margin: 25px 8px;
+    position: relative;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 16%);
+    background-color: #f2f2f2;
+    animation: .3s forwards downImage;
+    cursor: pointer;
+}
+
+.pokemon-item:hover {
+    animation: .3s forwards upImage;
+}
+
+.pokemon-flex-item {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-flex-item img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.data-pokemon {
+    width: 100%;
+}
+
+.pokemon-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0 25px 0;
+}
+
+.pokemon-menu li a{
+    display: block;
+}
+
+.pokemon-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+

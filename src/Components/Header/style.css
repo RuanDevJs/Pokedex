@@ -1,0 +1,39 @@
+@import "../../assets/css/animate.css";
+
+.header {
+    padding: 50px;
+    margin: 50px 0 0 0;
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1.header-title::after{
+    content: "";
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: 1px;
+    background-color: #f2f2f2;
+}
+
+.header-container input {
+    display: block;
+    width: 460px;
+    padding: 16px;
+    border: 0;
+    outline: 0;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+
+.toRightEffect{
+    opacity: 0.2px;
+}

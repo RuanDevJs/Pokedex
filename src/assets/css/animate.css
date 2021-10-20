@@ -1,0 +1,37 @@
+@keyframes upImage{
+    from{
+        transform: translate3d(0,0,0);
+        transition: 0.2s ease-out;
+    }
+    to{
+        transform: translate3d(0, -30px, 0);
+        background-color: #fff;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 20%);
+        transition: 0.2s ease-in;
+    }
+}
+
+@keyframes downImage{
+    from{
+        transform: translate3d(0, -30px,0);
+        transition: 0.2s ease-out;
+    }
+    to{
+        transform: translate3d(0, 0px, 0);
+        transition: 0.2s ease-in;
+    }
+}
+
+@keyframes toRightEffect{
+    from{
+        opacity: 0;
+        transform: translate3d(-30px, 0,0);
+        transition: 0.2s ease-out;
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0px, 0, 0);
+        transition: 0.2s ease-in;
+    }
+}
+
