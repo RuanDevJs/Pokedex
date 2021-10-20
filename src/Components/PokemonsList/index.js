@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { PokemonContext } from "../../Contexts/PokemonContexts";
 import "./style.css";
 
-export default function PokemonsList({ pokemons }) {
+export default function PokemonsList({ pokemons, index }) {
     const [pokemonsImage, setPokemonsImage] = useState([]);
     const [loadingImages, setLoadingImages] = useState(true);
 
@@ -19,7 +20,7 @@ export default function PokemonsList({ pokemons }) {
 
 
     return (
-        <div className="pokemon-item" animate-image>
+        <div className="pokemon-item">
             <div className="pokemon-flex-item">
                 {!loadingImages && (
                     <img

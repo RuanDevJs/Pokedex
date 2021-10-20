@@ -50,5 +50,8 @@
     text-transform: uppercase;
 }
 
-
+#animate-image {
+    animation: forwards 0.3s toRightEffect;
+    transition: ease-in 0.3s;
+}
 

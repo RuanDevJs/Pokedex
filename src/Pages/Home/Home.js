@@ -13,10 +13,10 @@ export default function Home() {
             {loading && <span>loading...</span>}
             {!loading && (
                 <div className="home-container">
-                    {pokemons.map(pokemon => <PokemonsList key={pokemon.name} pokemons={pokemon} />)}
+                    {pokemons.map((pokemon, index) => <PokemonsList key={pokemon.name} index={index} pokemons={pokemon} />)}
                 </div>
             )}
-            <Button onFetchMore={onFetchMore}/>
+            <Button onFetchMore={() => onFetchMore()}/>
         </section>
     );
 }
