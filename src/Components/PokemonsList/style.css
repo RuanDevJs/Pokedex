@@ -43,6 +43,7 @@
 
 .pokemon-menu li a{
     display: block;
+    padding: 5px 16px ;
 }
 
 .pokemon-title {
@@ -50,8 +51,31 @@
     text-transform: uppercase;
 }
 
+.pokemon-subtitle {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.pokemon-ability-li {
+    margin: 10px 0;
+}
+
+.pokemon-ability {
+    text-align: center;
+    text-transform: capitalize;
+}
+
 #animate-image {
     animation: forwards 0.3s toRightEffect;
     transition: ease-in 0.3s;
 }
 
+.pokemon-table {
+    display: none;
+}
+
+.pokemon-table.activeTable {
+    display: block;
+    animation: forwards 0.3s toRightEffect;
+}

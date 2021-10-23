@@ -14,7 +14,7 @@ export function PokemonProvider({ children }) {
     async function onFetchMore() {
         if (next.length) {
             const fetchMore = await (await fetch(next)).json();
-            console.log(fetchMore)
+
             setLoading(true);
             setCount((prev) => prev + 3);
             setPokemons((prev) => [...prev, fetchMore.results]);
